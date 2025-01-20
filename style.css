@@ -1,0 +1,89 @@
+/* ---Common Styles--- */
+body {
+    font-family: "Quicksand";
+    font-size: 16px;
+    color: rgba(14, 14, 14, 0.7);
+    margin: auto;
+    max-width: 1160px;
+}
+
+a, button {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+
+/* ---Nav Bar Styles--- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    display: flex;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 62px;
+    height: 62px;
+}
+
+.logo p {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0px 0px 0px 15px;
+    align-self: center;
+    color: rgb(17, 17, 17)
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0px 16px;
+    font-weight: 500;
+}
+
+nav .home {
+    color: rgb(254, 163, 1);
+    font-weight: 700;
+}
+
+nav .about {
+    color: rgb(1, 172, 253);
+}
+
+nav .facilities {
+    color: rgb(5, 212, 223);
+}
+
+nav .admission {
+    color: rgb(93, 88, 239);
+}
+
+nav button {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    border-radius: 12px;
+    background: rgb(254, 163, 1);
+    width: 197px;
+    height: 50px;
+}
+
+/* ---Nav Bar Responsive Styles--- */
+
+
+
+/* ---Hero Section Styles--- */
