@@ -1,10 +1,14 @@
-/* ---Common Styles--- */
+/* --- Common Styles --- */
 body {
     font-family: "Quicksand";
     font-size: 16px;
     color: rgba(14, 14, 14, 0.7);
     margin: auto;
+}
+
+nav, main {
     max-width: 1160px;
+    margin: 0 auto;
 }
 
 a, button {
@@ -12,16 +16,16 @@ a, button {
     cursor: pointer;
     font-size: 20px;
     line-height: 30px;
+    font-family: "Quicksand";
 }
 
 
-
-/* ---Nav Bar Styles--- */
+/* --- Nav Bar Styles --- */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .logo {
@@ -82,8 +86,95 @@ nav button {
     height: 50px;
 }
 
-/* ---Nav Bar Responsive Styles--- */
+/* --- Nav Bar Responsive Styles --- */
+@media (max-width: 768px) {
+    header {
+        border-bottom: 1px solid #FEA301;
+    }
+
+    nav, main {
+        padding: 20px;
+        margin: 0 auto;
+    }
+}
 
 
+/* --- Hero Section Styles --- */
+.hero-section {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
 
-/* ---Hero Section Styles--- */
+.left-hero h1 {
+    color: #111111;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 61px;
+    margin: 0px;
+}
+
+.left-hero h1 .empower {
+    color: #FEA301;
+}
+
+.left-hero h1 .vision {
+    color: #01ACFD;
+}
+
+.left-hero p {
+    color: rgb(17, 17, 17);
+    font-size: 20px;
+    font-weight: 400;
+    margin: 24px auto;
+}
+
+.left-hero button {
+    color: rgb(17, 17, 17);
+    border: none;
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    font-family: "Quicksand";
+    font-weight: 700;
+    padding: 10px;
+    width: 197px;
+    height: 50px;
+
+}
+
+
+/* --- Hero Section Responsive Styles --- */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .right-hero {
+        order: -1;
+    }
+
+    .right-hero img {
+        width: 100%;
+    }
+
+    .left-hero h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .left-hero p {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 500;
+    }
+
+    .left-hero button {
+        font-size: 16px;
+        line-height: 30px;
+        border-radius: 8px;
+    }
+}
