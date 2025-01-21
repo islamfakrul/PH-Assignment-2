@@ -33,12 +33,17 @@ p {
 }
 
 nav {
-    max-width: 80%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero-container, .curriculum-container, .stories-container, .footer-container{
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .hero-section, .curriculum-section, .stories-section, .footer-section{
-    max-width: 80%;
+    width: 80%;
     margin: 0 auto;
     padding: 60px 0px 60px 0px;
 }
@@ -63,8 +68,8 @@ ul li {
 
 /* --- Common Responsive Styles --- */
 @media (max-width: 768px) {
-    .hero-section, .curriculum-section, .stories-section {
-        width: 100%;
+    .hero-section, .curriculum-section, .stories-section, .footer-section {
+        width: 90%;
         margin: 0 auto;
         padding: 20px 0px 0px 0px;
     }
@@ -78,11 +83,13 @@ ul li {
 
 
 /* --- Nav Bar Styles --- */
-nav {
+.menubar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    width: 80%;
+    margin: auto;
 }
 
 .logo {
@@ -160,8 +167,11 @@ nav button {
         overflow: hidden;
     }
 
-    nav, main {
-        padding: 20px;
+    .menubar {
+        width: 90%;
+    }
+
+    nav {
         margin: 0 auto;
     }
 
@@ -499,6 +509,10 @@ nav button {
 
 /* --- Story Section Responsive Styles --- */
 @media (max-width: 768px) {
+    .stories-section {
+        padding-bottom: 40px;
+    }
+    
     .stories-section-btn {
         color: rgb(255, 255, 255);
         padding: 10px;
@@ -606,6 +620,7 @@ nav button {
 @media (max-width: 768px) {
     .footer-section {
         display: block;
+        padding: 40px 0px;
     }
 
     .footer-column-one, .footer-column-two {
