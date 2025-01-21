@@ -51,6 +51,15 @@ a, button {
     font-family: "Quicksand";
 }
 
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul li {
+    list-style: none;
+}
+
 
 /* --- Common Responsive Styles --- */
 @media (max-width: 768px) {
@@ -526,7 +535,7 @@ nav button {
 }
 
 
-
+/* --- Footer Section Styles --- */
 .footer-container {
     background: rgb(1, 172, 253);
     color: #fff;
@@ -538,9 +547,22 @@ nav button {
     justify-content: space-between;
 }
 
+.footer-column-one {
+    padding: 0px 100px 0px 0px;
+}
+
+.footer-column-one p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
 .footer-logo {
     display: flex;
     cursor: pointer;
+    gap: 10px;
+    align-items: center;
 }
 
 .footer-logo img {
@@ -548,10 +570,45 @@ nav button {
     height: 62px;
 }
 
-.footer-logo p {
-    font-size: 32px;
+.footer-logo .footer-logo-text {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
     font-weight: 700;
-    margin: 0px 0px 0px 15px;
-    align-self: center;
-    color: rgb(17, 17, 17)
+    line-height: 30px;
+    margin: 0px;
+}
+
+.footer-column-two h3 {
+    padding: 0px 0px 30px 0px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.footer-column-two ul li a {
+    color: rgb(255, 255, 255);font-size: 20px;
+    font-weight: 500;line-height: 25px;
+    padding: 0px 0px 20px 0px;
+    display: block;
+}
+
+.footer-column-three h3 {
+    padding: 0px 0px 30px 0px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+
+/* --- Footer Section Responsive Styles --- */
+@media (max-width: 768px) {
+    .footer-section {
+        display: block;
+    }
+
+    .footer-column-one, .footer-column-two {
+        padding: 0px 0px 40px 0px;
+    }
 }
